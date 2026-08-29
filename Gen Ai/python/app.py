@@ -130,7 +130,8 @@ apply_discount(500)"""
 def factorial(num):
         
     if num == 0 or num == 1:
-        print( "this is not factorial number")
+        return 1
+    
     elif num < 0 :
         return "error"
     
@@ -141,4 +142,5 @@ def factorial(num):
 print(factorial(5))
 print(factorial(0))
 print(factorial(-3))
+
 
