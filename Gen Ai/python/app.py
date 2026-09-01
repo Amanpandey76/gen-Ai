@@ -122,7 +122,7 @@ def apply_discount(prize, discount=5):
         print(f"Rs {discount_prize}")
 
 apply_discount(1000,70)
-apply_discount(500)"""
+apply_discount(500)
 
 
 
@@ -141,9 +141,45 @@ def factorial(num):
         
 print(factorial(5))
 print(factorial(0))
-print(factorial(-3))
+print(factorial(-3))"""
 
-print("hello world")
+# there are four kind of functions
+# 1. def(), syntax <---> def variables(parameter) print(variables(arguments))  <---- we used def() keyword becouse we don't want to wirtes the same code again and again, it's means it is reuseable  code we used that code again multiple operations.
+# 2. lambda, syntax <----> lambda arguments: expresssions <--- lambda function are the one liner function defined by the lambda keyword, Arguments:it is input values form the users and it can take many input, Expressions:it is logic(fuction body) that you want to perform opertion on that input but remember that it should a single logic .
+# 3. map()  syntax <----> map(functions , iterable)      <---- map fuctione are used to transforming the data or applying the operation on All items of the iterable. it is also used making short  the code.
+
+# lambda fuction 
+
+lambda_function = lambda x,y : x+y
+print(lambda_function(5,6))
+
+def sum(num1,num2 ):
+    return num1+num2
+
+print(sum(5,9))
+
+new = lambda x : x if x%2==0 else x**3
+print(new(5))
+
+## map fuction
+
+print(list(map (lambda x: x**2,[1,3,4,5,6])))
+
+#using def() function to find the square numbers.
+def square(num):
+    square_nu = []
+    for squ_num in num:
+        num1= squ_num**2
+        square_nu.append(num1)
+    return square_nu
+
+print(square([4,6,5,6,7]))
 
 
+def for_map_fuction(num):
+    return num**2
+
+map_function =list(map(for_map_fuction,[10,20,30,40,50]))
+
+print(map_function)
 
