@@ -141,7 +141,7 @@ def factorial(num):
         
 print(factorial(5))
 print(factorial(0))
-print(factorial(-3))"""
+print(factorial(-3))
 
 # there are four kind of functions
 # 1. def(), syntax <---> def variables(parameter) print(variables(arguments))  <---- we used def() keyword becouse we don't want to wirtes the same code again and again, it's means it is reuseable  code we used that code again multiple operations.
@@ -181,5 +181,16 @@ def for_map_fuction(num):
 
 map_function =list(map(for_map_fuction,[10,20,30,40,50]))
 
-print(map_function)
+print(map_function)"""
 
+candidate_list = [{"name":"Aman", "age":24, "gender":"Male"},
+                  {"name":"Sourav","age":22, "gender":"Male"},
+                  {"name":"Himanshu","age":20, "gender":"Male"},
+                  {"name":"Sarika", "age": 18, "gender":"Female"}]
+
+def filter_candidate(candidate):
+    return candidate["age"]
+    
+age_of_candidate = list(map(filter_candidate, candidate_list))
+
+print(age_of_candidate)
